@@ -34,7 +34,7 @@ Embeddings are compared in two ways. [First](3_Examination_of_cosine_similarity_
 
 The [next](4_Examination_of_Word_Associations.ipynb) section is based upon work done in social psychology to uncover implicit bias. Defined sets of conceptual words (for example, words associated with freedom, science, weapons etc) are examined alongside specific attributes (for example, gender) or objective measures (such as pleasantness). This reveals specific instances of latent bias, some of which may have been held by the author, or some which may have been a reflection of societal values.
 
-A selection of papers that inspired the project can be found [here](papers) 
+A selection of papers that inspired the project can be found [here](Papers) 
 
 ### Summary findings
 
