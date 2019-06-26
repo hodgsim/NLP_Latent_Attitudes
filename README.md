@@ -3,7 +3,7 @@
 # Exploring latent attitudes using word2vec
 > Uncovering implicit bias using domain-specific word embeddings
 
-Vectorized word embeddings trained on a large corpus such as Wikipedia or Google News can be used to reveal relationships between pairs of words. For example, the vector difference between the words 'Paris' and 'France' is very similar to the vector difference between the words 'Tokyo' and 'Japan'. This feature of word embeddings can be used to reveal not only factual relationships, but also conceptual relationships relating to gender, race or any other dimension. However, they often reflect a degree of implicit bias that can result in unfortunate stereotypes. For instance, Bolukbasi discovered that by applying the difference between man and woman to the phrase 'computer programmer' the resulting vector was most similar to ['homemaker'](https://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-debiasing-word-embeddings.pdf)
+Vectorized word embeddings trained on a large corpus such as Wikipedia or Google News can be used to reveal relationships between pairs of words. For example, the vector difference between the words "Paris" and "France" is very similar to the vector difference between the words "Tokyo" and "Japan". This feature of word embeddings can be used to reveal not only factual relationships, but also conceptual relationships relating to gender, race or any other dimension. However, they often reflect a degree of implicit bias that can result in unfortunate stereotypes. For instance, Bolukbasi discovered that by applying the difference between man and woman to the phrase 'computer programmer' the resulting vector was most similar to ['homemaker'](https://papers.nips.cc/paper/6228-man-is-to-computer-programmer-as-woman-is-to-homemaker-debiasing-word-embeddings.pdf)
 
 By using broad-based corpora as the source for embeddings, researchers in this area are uncovering widespread biases that are present in society as a whole. This project seeks to examine bias more narrowly, by comparing word embeddings that are derived from individual domains.
 
@@ -32,7 +32,7 @@ This includes an [examination](2_Initial_Exploration.ipynb) of corpus size and w
 
 Embeddings are compared in two ways. [First](3_Examination_of_cosine_similarity_pairs.ipynb), pairs of words that display a high degree of cosine similarity in one dataset but not in another are identified. This gives a sense of some of the topics or concepts that are uniquely prominent in a given dataset.
 
-The [next](4_Examination_of_Word_Associations.ipynb) section is based upon work done in social psychology to uncover implicit bias. Defined sets of conceptual words (for example, words associated with freedom, science, weapons etc) are examined alongside specific attributes (for example, gender) or objective measures (such as pleasantness). This reveals specific instances of latent bias, some of which may have been held by the author, or some of which may have been a reflection of societal values.
+The [next](4_Examination_of_Word_Associations.ipynb) section is based upon work done in social psychology to uncover implicit bias. Defined sets of conceptual words (for example, words associated with freedom, science, weapons etc) are examined alongside specific attributes (for example, gender) or subjective measures (such as pleasantness). This reveals specific instances of latent bias, some of which may have been held by the author, or some of which may have been a reflection of societal values.
 
 A selection of papers that inspired the project can be found [here](Papers) 
 
@@ -63,5 +63,5 @@ _Optional_
 
 * bhtsne
 
-t-SNE calculations are performed using scikit-learn, although this can require significant amounts of memory. If there are problems with the workbook, instructions for installing the [bhtsne](https://github.com/lvdmaaten/bhtsne) package are included. This uses Barnes-Hut t-SNE, which is an efficient approximation of t-SNE, running in _O(NlogN)_ time and requiring _O(N)_ memory, instead of _O(N^2)_ for the full implementation.
+t-SNE calculations are performed using scikit-learn, although this can require significant amounts of memory. If this is an issue, instructions for installing the [bhtsne](https://github.com/lvdmaaten/bhtsne) package are included. This uses Barnes-Hut t-SNE, which is an efficient approximation of t-SNE, running in _O(NlogN)_ time and requiring _O(N)_ memory, instead of _O(N^2)_ for the full implementation.
 
